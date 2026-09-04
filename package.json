@@ -4,7 +4,7 @@
   "description": "OpenCode plugin that sends ntfy.sh notifications with smart main/subagent filtering",
   "type": "module",
   "main": "./dist/plugin.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/plugin.d.ts",
   "exports": {
     ".": {
       "import": "./dist/plugin.js",
