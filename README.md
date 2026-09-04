@@ -43,14 +43,16 @@ npm install
 npm run build
 ```
 
-Use the local OpenCode plugin build at `/root/code/opencode-ntfy-smart/dist/index.js`.
+Use the local OpenCode plugin build at `/root/code/opencode-ntfy-smart/dist/plugin.js`.
+
+The entry module exports exactly one plugin (`OpencodeNtfySmart`, plus a default export). OpenCode calls every named export of a plugin module as a plugin, so helper functions must not be exported from the entry.
 
 Example OpenCode plugin configuration:
 
 ```json
 {
   "plugin": [
-    "/root/code/opencode-ntfy-smart/dist/index.js"
+    "/root/code/opencode-ntfy-smart/dist/plugin.js"
   ]
 }
 ```
